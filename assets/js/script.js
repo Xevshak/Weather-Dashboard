@@ -72,7 +72,7 @@ exitIcon.addEventListener("click", function(event) {
 async function getCoordinates(cityName) {
     return new Promise(resolve => {
     namae = cityName.split(' ').filter(s => s).join(',');
-    callLocAPI = `http://open.mapquestapi.com/geocoding/v1/address?key=${locationKey}&location=${namae}`
+    callLocAPI = `https://open.mapquestapi.com/geocoding/v1/address?key=${locationKey}&location=${namae}`
     fetch(callLocAPI)
     .then(function(response) {
         if (response.ok) {
