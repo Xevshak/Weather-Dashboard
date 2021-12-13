@@ -1,0 +1,42 @@
+
+.hero{
+    background-color: #9C826A;
+    color: #E8C29E;
+}
+.hero p {
+    max-width: 75%;
+    color: #E8C29E;
+}
+.app-title {
+    font-size: 3rem;
+    background-color: #E8C29E ;
+    color: #9C826A;
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: 2px;
+    box-shadow: 6px 5px #C2A284;
+  }
+.status-text {
+    bottom: 10px;
+}
+
+.status-text-main {
+    bottom: 35px;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #665545;
+}
+
+#display-weather {
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

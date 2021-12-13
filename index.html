@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="d-flex flex-column justify-content-center">
+  <header class="hero">
+    <h1 class="app-title">
+      <i class="fab"></i> Weather Dashboard
+    </h1>
+    <p>Your One-Stop Shop for weather information for the next 5 days!
+    </p>
+  </header>
+    <main class="row justify-content-center flex-row d-flex" id="main">
+        <div class="col-12 col-md-4">
+            <div class="card" id="search-area">
+                <div class="card-body" style="width: 100%">
+                    <form id="search-input-area" class="d-flex justify-content-center flex-column" style="width: 100%">
+                        <div class="form-group row justify-content-around" style="width: 100%">
+                            <label class="col-form-label" for="city-name">City</label>
+                            <div class="col-10">
+                                <input type="text" class="form-control" 
+                                id="city-name" aria-describedby="cityNameHelp"
+                                    placeholder="e.g. Chicago">
+                                <small id="cityNameHelp" class="form-text text-muted">Enter a city anywhere</small>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning align-self-center" style="width: 50%; background-color: #9C826A; color: #E8C29E" id="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body" id="storage">
+                    <h5 class="card-title">Previous Searches</h5>
+                    <ul class="list-group list-group-flush display-search" id="saved-searches">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container col-12 col-md-8" id="display-weather"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
